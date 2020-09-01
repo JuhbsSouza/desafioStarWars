@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<title>Star Wars: escolha seu lado</title>
+<link rel="stylesheet" href="css/estilo.css">
+<script src="js/index.js"></script>
+<script src="js/luz.js"></script>
+<script src="js/sombra.js"></script>
+
+<header>
+	<h1>Star Wars</h1>
+	<h2>Uma nova Guerra vai começar!</h2>
+	<h3>Escolha seu lado</h3>
+</header>
+
+<body>
+	<div class="flex-container2">
+		<div class="divContainer">
+			<img alt="Darth Vader, personagem da Sombra" class="ImgFundoBotoes" src="./imagens/darth.jpg"><br>
+			<h4>Quem será o seu personagem no Lado Sombrio?</h4>
+			<input class="InputRespostas" id="respostasLadoSombrio" type="text" name="S" placeholder="Digite aqui o nome do seu personagem"/>
+			<button onclick="ImprimeListaSombra()">Adicionar</button>
+		</div>
+		<div class="divContainer">
+			<img alt="BB8, Personagem da Luz" class="ImgFundoBotoes" src="./imagens/bb8.jpg"><br>
+			<h4>Quem será o seu personagem no Lado da Luz?</h4>
+			<input class="InputRespostas" id="respostasLadodaLuz" type="text" name="L" placeholder="Digite aqui o nome do seu personagem"/>
+			<button onclick="ImprimeListaLuz()">Adicionar</button>
+		</div>
+	</div>
+
+	<div class="flex-container">
+		<div class="resultado">
+			<h5>Seu time lado Sombrio</h5>
+			<ul class="respostasLadoSombrio" id="resultadoSombra"></ul>
+		</div>
+		<div class="resultado">
+			<h5>Seu time lado da Luz</h5>
+			<ul class="respostasLadodaLuz" id="resultadoLuz"></ul>
+		</div>
+	</div>
+</body>
+
+<foot>
+</foot>
+
+</html>
